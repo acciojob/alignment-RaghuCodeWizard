@@ -1,16 +1,105 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <title>HTML Assignment 3</title>
+    <style>
+        body {
+            text-align: center;
+        }
+		
+        .middle {
+			width:100%;
+            margin: auto;
+        }
+        .center {
+            text-align: center;
+        }
+		 .left {
+            text-align: left;
+        }
+        .right {
+            text-align: right;
+        }
+       
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: 1px;
+            padding: 1px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 4px;
+        }
+		#table-2{
+			margin:30px
+		}
+		#green1{
+			background-color:green;
+		}
+		#blue1{
+			background-color:blue;
+		}
+		
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <h1 class="middle">HTML Assignment #3</h1>
+    
+    <!-- Table 1 -->
+    <table class="middle" id="table-1">
+        <tr>
+            <td id="t11" class="left green">left</td>
+            <td id="t12" class="center">centre</td>
+            <td id="t13" class="right">right</td>
+        </tr>
+        <tr>
+            <td id="t21" class="left">left</td>
+            <td id="t22" class="center">centre</td>
+            <td id="t23" class="right">right</td>
+        </tr>
+        <tr>
+            <td id="t31" class="left green">left</td>
+            <td id="t32" class="center">centre</td>
+            <td id="t33" class="right">right</td>
+        </tr>
+    </table>
+    
+    <!-- Table 2 -->
+    <table class="middle" id="table-2">
+        <tr>
+            <td id="t21" class="center" colspan="6"></td>
+        </tr>
+        <tr>
+            <td id="t22" class="center"></td>
+            <td id="t23" class="center"></td>
+            <td id="t24" class="center"></td>
+            <td id="t25" class="center"></td>
+            <td id="t26" class="center"></td>
+            <td id="t27" class="center"></td>
+        </tr>
+        <tr>
+            <td id="t31" class="center"></td>
+            <td id="t32" class="center"></td>
+            <td id="t34" class="center"></td>
+            <td id="t35" class="center"></td>
+            <td id="t36" class="center"></td>
+        </tr>
+    </table>
+    
+    <!-- Table 3 -->
+    <table class="middle" id="table-3">
+        <tr class="green" id="green1">
+            <td colspan="6" class="center">  </td>
+        </tr>
+        <tr>
+            <td id="t-image" class="center blue" colspan="6">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Image">
+            </td>
+        </tr>
+        <tr class="blue" id="blue1">
+            <td colspan="6" class="center">  </td>
+        </tr>
+    </table>
 </body>
-
 </html>
